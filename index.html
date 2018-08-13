@@ -1,30 +1,48 @@
+<!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
-    <meta name="theme-color" content="#222" />
-    <title>CMS - Login</title>
-    <link href="css/global.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
-    <script src="js/index.js" ></script>
-    <script src="js/botones.js" ></script>
+    <title>Login Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/public/materialize.css" />
+    <script src="js/bin/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body id="login">
-  <main>
-    <div class="access">
-      <form id="datosLogin">
-        <label for="usuario">Identificación:</label>
-        <input class="input-icon" type="text" id="usuario" name="usuario" />
-        <span class="icon-input pe-7s-user"></span>
-        <label for="usuario">Contraseña:</label>
-        <input type="password" id="password" name="clave"/>
-        <span class="icon-input pe-7s-key"></span>
-        <button id="inicioSesion" type="button" class="btn btn-azul-bhn btn-rectangle btn-raised">
-          <div class="ripple-container"><span class="ripple-effect"></span></div>
-          Iniciar sesión
-        </button>
-      </form>
+
+<body>
+    <div class="background"></div>
+    <div class="backdrop"></div>
+    <div class="login-form-container" id="login-form">
+        <div class="login-form-content">
+            <div class="login-form-header">
+                <h4>SITIB</h4>
+                <div class="logo">
+                    <img src="img/logo.png" />
+                </div>
+                <h3>Ingrese a su Cuenta</h3>
+            </div>
+            <form method="post" action="" class="login-form">
+                <div class="input-container">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" class="input" name="email" placeholder="Correo" />
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="login-password" class="input" name="password" placeholder="Contraseña" />
+                    <i id="show-password" class="fa fa-eye"></i>
+                </div>
+                <div class="rememberme-container">
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    <label for="rememberme" class="rememberme">
+                        <span>Recordarme</span>
+                    </label>
+                    <a class="forgot-password" href="#">Olvide mi contraseña</a>
+                </div>
+                <input type="submit" name="login" value="Ingresar" class="button" />
+                <a href="#" class="register #d32f2f red darken-2">Registrarse</a>
+            </form>
+        </div>
     </div>
-    <div class="publish"> </div>
-  </main>
 </body>
+
+</html>
