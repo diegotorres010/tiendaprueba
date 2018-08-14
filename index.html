@@ -5,8 +5,10 @@
     <title>Login Formulario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/public/materialize.css" />
-    <script src="js/bin/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
 </head>
 
 <body>
@@ -14,34 +16,67 @@
     <div class="backdrop"></div>
     <div class="login-form-container" id="login-form">
         <div class="login-form-content">
-            <div class="login-form-header">
-                <h3>Bienvenido a SITIB</h3>
-                <div class="logo">
-                    <img src="img/logo.png" />
+            <div class="row">
+                <div class="login-form-header">
+                    <div class="row">
+                        <div class="col s12">
+                            <h3>Bienvenido a SITIB</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo">
+                        <img src="img/logo.png" />
+                    </div>
                 </div>
-                <h3>Ingresar sus datos</h3>
             </div>
             <form method="post" action="" class="login-form">
-                <div class="input-container">
-                    <i class="fa fa-envelope"></i>
-                    <input type="email" class="input" name="email" placeholder="Correo" />
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Correo electrónico o usuario</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col s12">
+                        <div class="rememberme-container">
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span>Recordarme</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-container">
-                    <i class="fa fa-lock"></i>
-                    <input type="password" id="login-password" class="input" name="password" placeholder="Contraseña" />
-                    <i id="show-password" class="fa fa-eye"></i>
+                <div class="row">
+                    <div class="col s12">
+                        <a class="waves-effect waves-light btn-large blue darken-4">Ingresar</a>
+                    </div>
                 </div>
-                <div class="rememberme-container">
-                    <label>
-                        <input type="checkbox" class="filled-in blue darken-4" checked="checked" />
-                        <span>Recordarme</span>
-                    </label>
+                <div class="row">
+                    <div class="col s12">
+                        <a class="waves-effect waves-light btn-large modal-trigger red darken-2" href="#modal1">Registrarse</a>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Registro</h4>
+                                <p>Registro</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Registrar</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a class="waves-effect waves-light btn-large blue darken-4">Ingresar</a>
-                <a class="waves-effect waves-light btn-large red darken-2">Registrarse</a>
             </form>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
 </body>
 
 </html>

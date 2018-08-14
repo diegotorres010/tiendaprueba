@@ -1,17 +1,20 @@
 .background {
-	filter: blur(15px);
-	-webkit-filter: blur(10px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
+//	filter: blur(15px);
+//	-webkit-filter: blur(10px);
+//	-moz-filter: blur(5px);
+//	-o-filter: blur(5px);
+//	-ms-filter: blur(5px);
 //    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=5);
-    background-image: url('../../img/background.jpg');
+//    background-image: url('../../img/background.jpg');
+background-color: #0d47a1;
+background-image: url('../../img/background.png');
+
 }
 
 .backdrop {
 	background: #333333;
 //	filter: alpha(opacity=90);
-	opacity: .9;
+//	opacity: .9;
 //    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-    opacity: .5;
+//    opacity: .5;
 }
