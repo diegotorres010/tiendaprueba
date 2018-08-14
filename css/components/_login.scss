@@ -1,5 +1,5 @@
 body {
-	font-family: "open sans", "segoe ui";
+//	font-family: "open sans", "segoe ui";
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
@@ -54,7 +54,7 @@ a {
     border-radius: 50px;
     margin-top: 30px;
 }
-.login-form-header h3 {
+/*.login-form-header h3 {
 	font-weight: lighter;
     font-size: 18px;
 	margin: 10px 0;
@@ -66,11 +66,11 @@ a {
     font-size: 18px;
     margin: auto;
     margin: -15px;
-}
+}*/
 
 
 /* FROM INPUT */
-.login-form .input-container {
+/*.login-form .input-container {
 	border-bottom: 1px solid #CCCCCC;
     margin-top: 15px;
     font-size: 20px;
@@ -132,10 +132,10 @@ a {
 }
 .login-form .register:hover	{
 	background: #d0d0d0;
-}
+}*/
 
 /* ACTIVATION LINK */
-.resend-activation {
+/*.resend-activation {
 	text-align: center;
 	margin-top: 15px;
 	margin-top: 10px;
@@ -147,7 +147,7 @@ a {
     margin-top: 7px;
     color: #a5a5a5;
 	line-height: 25px;
-}
+}*/
 
 /* SEPARATOR */
 .login-form-content .separator {
@@ -167,7 +167,7 @@ a {
 }
 
 /* RESPONSIVE */
-@media screen and (max-height: 600px) {
+/*@media screen and (max-height: 600px) {
 	.login-form-container {
 		margin-top: 0 !important;
 		top: 10px !important;
@@ -189,4 +189,4 @@ a {
 		margin-right: 5px;
 		width: 19px;
 	}
-}
+}*/

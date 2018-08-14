@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-//Personal
-@import "components/login";
-@import "components/background";
-
 // Color
 @import "components/color-variables";
 @import "components/color-classes";
@@ -43,3 +39,7 @@
 @import "components/pulse";
 @import "components/datepicker";
 @import "components/timepicker";
+
+//Personal
+@import "components/login";
+@import "components/background";

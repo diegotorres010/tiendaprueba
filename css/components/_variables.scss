@@ -36,6 +36,7 @@
 
 $primary-color: color("materialize-red", "lighten-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
+
 $primary-color-dark: darken($primary-color, 15%) !default;
 
 //$secondary-color: color("teal", "lighten-1") !default;
@@ -43,7 +44,14 @@ $secondary-color: color("teal", "darken-3") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
-$color-checkboxes: color("blue", "darken-4") !default;
+
+// variables del proyecto tienda
+$color-proy: color("blue", "darken-4") !default;
+
+$color-checkboxes: false !default;
+@if not $color-checkboxes {
+    $color-checkboxes: lighten($color-proy, 0%);
+}
 
 // 2. Badges
 // ==========================================================================
