@@ -11,9 +11,100 @@
 
 <body>
     <h1 class="al">hola mundo</h1>
+    <div class="container">
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bin/materialize.min.js"></script>
+        <!--division de columnas-->
+        <div class="row">
+            <div class="col l1 m2 s3 teal">1</div>
+            <div class="col l1 m2 s3 red">2</div>
+            <div class="col l1 m2 s3 green">3</div>
+            <div class="col l1 m2 s3 yellow">4</div>
+            <div class="col l1 m2 s3 orange">5</div>
+            <div class="col l1 m2 s3 gray">6</div>
+            <div class="col l1 m2 s3 brown">7</div>
+            <div class="col l1 m2 s3 cyan">8</div>
+            <div class="col l1 m2 s3 black">9</div>
+            <div class="col l1 m2 s3 teal">10</div>
+            <div class="col l1 m2 s3 green">11</div>
+            <div class="col l1 m2 s3 orange">12</div>
+        </div>
+
+        <!--subdivision de columnas tener en cuenta el padding-->
+        <div class="row">
+            <div class="col l6 teal">
+                <div class="col l6 green">
+                    <h4>1</h4>
+                </div>
+                <div class="col l6 cyan">
+                    <h4>1</h4>
+                </div>
+            </div>
+            <div class="col l6 red">
+                <h4>1</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        se pueden colocar container dentro de otros
+        recordar que el container tiene un porcentaje dependiendo la pantalla
+        sino utizamos row no funciona l# m# s# para las columnas y rejillas
+        sin el row se va hasta el limite osea sin padding
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col l4 m4 s12 green">verde</div>
+            <div class="col l8 m8 s12 red">rojo</div>
+        </div>
+    </div>
+
+    <!--
+    colors se puede colocar 
+    accent-(1-5) (contraste)
+    darken-(1-5) (oscuridad)
+    lighten-(1-5) (brillo)
+    no se pueden mezclar
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col block l1 m2 s3 red">1</div>
+            <div class="col block l1 m2 s3 purple">2</div>
+            <div class="col block l1 m2 s3 indigo">3</div>
+            <div class="col block l1 m2 s3 pink">4</div>
+            <div class="col block l1 m2 s3 blue">5</div>
+            <div class="col block l1 m2 s3 deep-purple">6</div>
+            <div class="col block l1 m2 s3 light-blue">7</div>
+            <div class="col block l1 m2 s3 cyan">8</div>
+            <div class="col block l1 m2 s3 teal">9</div>
+            <div class="col block l1 m2 s3 green">10</div>
+            <div class="col block l1 m2 s3 orange">11</div>
+            <div class="col block l1 m2 s3 deep-orange">12</div>
+            <div class="col block l1 m2 s3 brown">13</div>
+            <div class="col block l1 m2 s3 grey">14</div>
+            <div class="col block l1 m2 s3 blue-grey">15</div>
+            <div class="col block l1 m2 s3 black">16</div>
+            <div class="col block l1 m2 s3 white">17</div>
+        </div>
+
+        <!--
+    offset desplaze un objeto mas a la derecha
+-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col l4 block green">col l4 block</div>
+                <div class="col l4 offset-l4 offset-m3 block green">offset-l4 offset-m3</div>
+            </div>
+            <div class="row">
+                <div class="col l6 block cyan offset-s6">offset-s6</div>
+                <div class="col l6 block orange offset-s6">offset-s6</div>
+            </div>
+        </div>
+
+        <!--https://www.youtube.com/watch?v=RZ1FAemjxBI&index=5&list=PLYAyQauAPx8maaj2i1br7-iI4AQLZkcqA-->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bin/materialize.min.js"></script>
 </body>
 
 </html>
