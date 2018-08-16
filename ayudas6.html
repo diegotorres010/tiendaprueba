@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITIB</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="teal">
+
+
+    <!-- notificaciones toast -->
+    <!-- 
+        ver documentacion ahi clases tiempo forma callback
+        se puede agregar codigo html ejemplo
+        M.toast({html: '<h1>I am a toast!</h1>' 
+
+        el ejemplo muestra un toast con un input y el boton del toast tambien realiza una accion por js
+    -->
+
+    <div class="container">
+        <input type="text" id="mensaje">
+        <br>
+        <input type="button" id="mostrar" class="btn red" value="Mostrar">
+    </div>
+
+
+    <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            M.toast({ html: 'I am a toast!', classes: 'rounded' });
+        });
+    </script>
+
+    <script>
+        $(document).on('click', '#mostrar', function (e) {
+            var mensaje = "<span>" + $('#mensaje').val() + "</span> <button id='deshacer' class='btn-flat toast-action'>Deshacer</button>";
+            M.toast({ html: mensaje, classes: 'rounded' });
+        });
+
+        $(document).on('click','#deshacer',function(e){
+            alert('ejecucion de boton');
+        });
+    </script>
+</body>
+
+</html>

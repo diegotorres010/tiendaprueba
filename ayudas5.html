@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITIB</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="teal">
+
+
+    <!-- contenido colapsable collapsible -->
+    <!-- 
+        accordion al dar click se ocultan los otros - - viene por defecto
+        expandable al dar click no se ocultan deja abiertos los colapsables
+        popout efecto popout
+        class active en li para dejar abierto
+    -->
+
+    <div class="container">
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">Titulo</div>
+                <div class="collapsible-body white-text">orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+                    texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</div>
+            </li>
+            <li>
+                <div class="collapsible-header">Titulo</div>
+                <div class="collapsible-body white-text">orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+                    texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul class="collapsible expandable">
+            <li>
+                <div class="collapsible-header">Titulo</div>
+                <div class="collapsible-body white-text">orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+                    texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</div>
+            </li>
+            <li>
+                <div class="collapsible-header">Titulo</div>
+                <div class="collapsible-body white-text">orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+                    texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul class="collapsible popout">
+            <li>
+                <div class="collapsible-header">Titulo</div>
+                <div class="collapsible-body white-text">orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+                    texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</div>
+            </li>
+            <li>
+                <div class="collapsible-header">Titulo</div>
+                <div class="collapsible-body white-text">orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+                    texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+            var elem = document.querySelector('.collapsible.expandable');
+            var instance = M.Collapsible.init(elem, {
+                accordion: false
+            });
+        });
+    </script>
+</body>
+
+</html>

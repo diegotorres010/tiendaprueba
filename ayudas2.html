@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITIB</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="teal">
+    <!-- alineacion de texto solo para texto-->
+    <!-- no se puede utizar valign-wrapper center
+    se debe agregar otro div con las mismas caracteristicas
+    con el center
+    <div class="row">
+        <div class="col l12 m12 s12 block white valign-wrapper">
+            <div class="col l12 m12 s12 center">
+            valign-wrapper
+            </div>
+        </div>
+    </div>-->
+    <div class="container">
+        <h4>Alineacion vertical</h4>
+        <div class="row">
+            <div class="col l12 m12 s12 block white valign-wrapper">
+                valign-wrapper
+            </div>
+        </div>
+    </div>
+    <!-- aca se reemplaza el center -->
+    <!-- left-align
+    rigth-aling
+    center-aling -->
+
+    <!-- contenido flotante alinear los div no texto
+    left
+    right
+    center-->
+    <div class="container">
+        <div class="row">
+            <h4>Alineacion div izquierda derecha centro</h4>
+            <div class="col l12 m12 s12 block white">
+                <br>
+                <div class="col l6 cyan darken-1 right">
+                    sin texto
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ocultar contenidos -->
+    <!-- 
+        hide 
+        hide-on-small-only  solo ocultar en dispositivos pequeños s
+        hide-on-med-only    solo se oculta en dispositivos medianos m
+        hide-on-med-and-down se oculta cuando es mediano hacia abajo m s
+        hide-on-med-and-up  se oculta cuando es mediano hacia arriba m l
+        hide-on-large-only  se oculta en dispositivos grandes l
+    -->
+    <div class="container">
+        <div class="row white">
+            <div class="col l3 m3 s3 block indigo">a</div>
+            <div class="col l3 m3 s3 block indigo darken-3 hide-on-large-only">a</div>
+        </div>
+    </div>
+
+    <!-- efecto hoverable -->
+
+    <div class="row white">
+        <div class="container">
+            <div class="col l6 m6 s12 white-text cyan hoverable">
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                    estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la
+                    imprenta)
+                </p>
+            </div>
+            <div class="col l6 m6 s12 white-text cyan darken-3 hoverable">
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                    estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la
+                    imprenta)
+                </p>
+            </div>
+            <img src="img/prueba/1.png" class="hoverable">
+            <div class="col l4 m6 s12 indigo lighten-1 center">
+                <img src="img/prueba/2.png" class="hoverable">
+            </div>
+            <div class="col l4 m6 s12 indigo lighten-4 center hoverable">
+                <img src="img/prueba/3.png" class="hoverable">
+            </div>
+
+            <!-- Tambien se puede para botones hoverable pero existen otros clases -->
+            <input type="button" class="btn hoverable" value="aceptar">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row white" style="padding: 10px">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe
+            </p>
+            <blockquote>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe
+            </blockquote>
+            <div class="col l6 push-l6">
+                <blockquote>
+                    <i>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</i>
+                </blockquote>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col l6">
+                <blockquote>
+                    <i>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. pe</i>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
+</body>
+
+</html>

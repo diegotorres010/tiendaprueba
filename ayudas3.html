@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITIB</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="teal">
+
+    <!-- efecto de profundidad z-depth-1-->
+    <div class="container">
+        <div class="row">
+            <div class="col l12 m12 s12 block indigo z-depth-1">nivel 1</div>
+            <div class="col l12 m12 s12 block indigo z-depth-2">nivel 2</div>
+            <div class="col l12 m12 s12 block indigo z-depth-3">nivel 3</div>
+            <div class="col l12 m12 s12 block indigo z-depth-4">nivel 4</div>
+            <div class="col l12 m12 s12 block indigo z-depth-5">nivel 5</div>
+        </div>
+        <div class="row">
+            <div class="col l2 amber block z-depth-1">nivel 1</div>
+            <div class="col l2 amber block z-depth-2">nivel 2</div>
+            <div class="col l2 amber block z-depth-3">nivel 3</div>
+            <div class="col l2 amber block z-depth-4">nivel 4</div>
+            <div class="col l2 amber block z-depth-5">nivel 5</div>
+        </div>
+    </div>
+
+    <!-- imagenes adaptacion -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col l6 m6 s12">
+                <img src="img/prueba/4.png" class="responsive-img circle">
+            </div>
+            <div class="clearfix"></div>
+            <div class="col l12 m12 s12 center">
+                <img src="img/prueba/4.png" class="responsive-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- videos adaptacion -->
+    <!-- importante la class video-container 
+        responsive-video para que el video se adapte a los tamaños -->
+
+    <div class="container">
+        <div class="row video-container" style="margin: 15px">
+            <div class="col l12 m12 s12">
+                <video class="responsive-video" controls="true">
+                    <source src="videos/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row video-container" style="margin: 15px">
+            <div class="col l6">
+                <video class="responsive-video" controls="true">
+                    <source src="videos/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col l6">
+                <video class="responsive-video" controls="true">
+                    <source src="videos/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
+</body>
+
+</html>

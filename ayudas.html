@@ -7,6 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block{
+            height:50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -101,7 +106,84 @@
             </div>
         </div>
 
-        <!--https://www.youtube.com/watch?v=RZ1FAemjxBI&index=5&list=PLYAyQauAPx8maaj2i1br7-iI4AQLZkcqA-->
+        <!--pull ( de derecha a izquierda) y push ( de izquierda a derecha)-->
+
+        <div class="teal">
+            <div class="container teal">
+                <div class="row">
+                    <div class="col l3 s3 push-s9 white block">
+                        push
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr>
+                    <div class="col l9 s9 offset-l3 offset-s3 pull-s3 orange block">
+                        pull
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr>
+                    <div class="col l3 m3 s3 push-s9 cyan block">
+                        push-s9
+                    </div>
+                    <div class="col l9 m9 s9 pull-s3 orange block">
+                        push-s3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tamaños adaptables -->
+
+        <nav class="teal">
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+        <div class="row white">
+            <div class="container">
+                <div class="col l6 m6 s12 white-text orange">
+                    <p>
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica
+                        a la imprenta)
+                    </p>
+                </div>
+                <div class="col l6 m6 s12 white-text deep-orange">
+                    <p>
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica
+                        a la imprenta)
+                    </p>
+                </div>
+                <div class="col l4 m6 s12 indigo center">
+                    <img src="img/prueba/1.png">
+                </div>
+                <div class="col l4 m6 s12 indigo lighten-1 center">
+                    <img src="img/prueba/2.png">
+                </div>
+                <div class="col l4 m6 s12 indigo lighten-4 center">
+                    <img src="img/prueba/3.png">
+                </div>
+            </div>
+        </div>
+
+        <footer class="teal">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 m6 s12">
+                        <ul>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                        </ul>
+                    </div>
+                    <div class="col l6 m6 s12">
+                        <p>Derechos reservados</p>
+                        <p>sum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                            el texto de relleno estándar de las industrias</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bin/materialize.min.js"></script>
