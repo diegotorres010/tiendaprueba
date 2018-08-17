@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.png">
 </head>
 
 <body class="grey lighten-4">
@@ -13,16 +14,17 @@
         <div class="col s12">
             <nav class="nav-extended">
                 <div class="nav-wrapper background">
-                    <a href="#" class="brand-logo">SITIB</a>
+                    <a href="#" class="brand-logo">
+                        <img src="img/logo.png" class="hoverable" />SITIB</a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>
-                            <a href="">Inicio</a>
+                            <a id="inicio" onclick="menuPrincipal('menu1.html')">Inicio</a>
                         </li>
                         <li>
-                            <a href="">Reportes</a>
+                            <a id="reportes" onclick="menuPrincipal('menu2.html')">Reportes</a>
                         </li>
                         <li>
                             <a href="">Cerrar sesión</a>
@@ -35,22 +37,8 @@
                     </ul>
                 </div>
 
-                <div class="nav-content background">
-                    <ul class="tabs tabs-transparent">
-                        <li class="tab">
-                            <a href="#test1">Principal</a>
-                        </li>
-                        <li class="tab">
-                            <a class="active" href="#test2">Facturar</a>
-                        </li>
-                        <li class="tab">
-                            <a href="#test3">Productos</a>
-                        </li>
-                        <li class="tab">
-                            <a href="#test4">Ventas</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- menu principal -->
+                <div id="menuprin" class="nav-content background"></div>
             </nav>
 
             <ul id="slide-out" class="sidenav">
@@ -102,7 +90,7 @@
             </ul>
         </div>
     </div>
-    
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bin/materialize.min.js"></script>
     <script>
@@ -112,6 +100,17 @@
             $('.sidenav').sidenav();
             $('.tabs').tabs();
         });
+    </script>
+
+    <script>
+            function menuPrincipal(menup) {
+                $("#menuprin").load(menup);
+            };
+        /* $(document).ready(function () {
+            $("#inicio").click(function () {
+                $("#menu1").load("menu1.html");
+            });
+        });*/
     </script>
 </body>
 
