@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITIB</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="teal">
+
+    <!-- dismissible: false para que no se pueda cerrar una ventana modal ver propiedades 
+    dentro del array se puede crear
+    ready: function(modal, tigger)
+    {
+        alert(tigger);
+    },
+    complete: function(modal, tigger)
+    {
+        alert('cerrado');
+    }
+    complete para cuando se cierra el modal
+    ready cuando inicia el modal
+-->
+
+    <!-- scrollspy
+    sirve para visualizar si hay secciones saber en que seccion estamos
+-->
+
+    <!-- menu deslizables  sidenav
+    caracteristicas edge left defecto y right
+-->
+
+    <!-- pestañas tabs para contenidos diferentes -->
+
+    <!-- botones
+    usar a o button ..... no input tipo boton
+-->
+
+    <!-- cards tarjetas -->
+
+    <!-- collections collecciones son listas sirven para usuarios y productos -->
+
+    <!-- pagination paginacion  -->
+
+    <!-- autocomplete autocompletados -->
+
+    <!-- badges  
+    tip para hacer mas grande el dropdown con col
+-->
+    <div class="container">
+        <div class="collection">
+            <a href="#!" class="collection-item">
+                <span class="badge">1</span>Alan</a>
+            <a href="#!" class="collection-item">
+                <span class="new badge" data-badge-caption="hola">4</span>Alan</a>
+            <a href="#!" class="collection-item">
+                <span class="new badge red" data-badge-caption="hola">4</span>Alan</a>
+            <a href="#!" class="collection-item">
+                <span class="badge">14</span>Alan</a>
+        </div>
+
+        <div class="row">
+            <ul id="dropdown2" class="dropdown-content">
+                <li>
+                    <a href="#!">one
+                        <span class="badge">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">two
+                        <span class="new badge">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">three</a>
+                </li>
+            </ul>
+            <a class="btn dropdown-trigger col l6 m6 s6" href="#!" data-target="dropdown2">Dropdown
+                <i class="material-icons right">arrow_drop_down</i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- listas desplegables -->
+    <!-- 
+        
+    -->
+
+    <div class="container white" style="height: 100vh">
+        <input type="button" class="dropdown-trigger btn" value="Mostrar lista" data-target="lista1">
+
+        <ul id="lista1" class="dropdown-content">
+            <li>
+                <a href="#">inicio</a>
+            </li>
+            <li>
+                <a href="#">inicio1</a>
+            </li>
+            <li>
+                <a href="#">inicio2</a>
+            </li>
+        </ul>
+
+        <!-- Dropdown Trigger -->
+        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li>
+                <a href="#!">one</a>
+            </li>
+            <li>
+                <a href="#!">two</a>
+            </li>
+            <li class="divider" tabindex="-1"></li>
+            <li>
+                <a href="#!">three</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">cloud</i>five</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
+    <script>
+        $('.dropdown-trigger').dropdown();
+    </script>
+    <script>
+        /* jquery viejo */
+        $('.dropdown-trigger').dropdown('open');
+
+    /*    $('.dropdown-trigger').dropdown({
+            coverTrigger: false,
+            constrainWidth: false,
+        });*/
+/*  este es en javascript
+   var elem = document.querySelector('.dropdown-trigger');
+            var instance = M.Dropdown.init(elem, {
+                coverTrigger: false,
+                constrainWidth: false,
+  });*/
+
+    </script>
+</body>
+
+</html>

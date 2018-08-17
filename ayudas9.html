@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITIB</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="teal">
+    <!-- date pickers 
+        i18n: {
+            months: ['Enero', 'Febrero', ... todos ],
+            monthsShort: ['Ene', 'Feb', ...],
+            weekdays: ['lunes', 'martes', ...],
+            weekdaysShort:[],
+            weekdaysAbbrev:
+        }
+    -->
+
+    <div class="container white">
+        <div class="row">
+            <input type="text" class="datepicker">
+        </div>
+    </div>
+
+    <!-- preloader precargadores
+        script de id progreso de ejemplo para cargar la barra
+    -->
+
+    <div class="container white" style="min-height: 100vh; padding: 20px">
+        <div class="row">
+            <div class="progress">
+                <div class="determinate" id="progreso" style="width: 70%"></div>
+            </div>
+
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preloader-wrapper active">
+                <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- floating action button
+        botones flotantes en la pagina
+    -->
+
+    <div class="container">
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating red">
+                        <i class="material-icons">insert_chart</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating yellow darken-1">
+                        <i class="material-icons">format_quote</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating green">
+                        <i class="material-icons">publish</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating blue">
+                        <i class="material-icons">attach_file</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').floatingActionButton();
+        });
+    </script>
+    <script>
+        $(function () {
+            var porcentaje = 0;
+            setInterval(function () {
+                $('#progreso').css('width', porcentaje + '%');
+                porcentaje++;
+            }, 500)
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+        });
+    </script>
+</body>
+
+</html>

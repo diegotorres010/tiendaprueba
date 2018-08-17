@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITIB</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .block {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="teal">
+
+
+    <!-- tooltips -->
+    <!-- 
+        mensajes con el puntero
+        primer script inicializa
+        segundo muestra un tooltip desde js
+        tercero destruye el tooltip del id que colocamos
+    -->
+
+    <div class="container white" style="height: 100vh">
+        <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="top" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="left" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="right" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ir a inicio">Inicio</a>
+        <a class="btn tooltipped" id="posts" data-position="bottom" data-tooltip="yo estoy con js">con javascript</a>
+        <input type="button" class="btn red" value="Quitar tooltip" id="quitar">
+    </div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bin/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+        $(document).ready(function () {
+            $('#posts').tooltip({
+                delay: 600,
+                position: 'right',
+                html: '<h5>ir al post</h5>',
+            });
+        });
+        $(document).on('click', '#quitar', function(e){
+            var instance = M.Tooltip.getInstance(document.getElementById('posts'));
+            instance.destroy();            
+        });
+    </script>
+</body>
+
+</html>
